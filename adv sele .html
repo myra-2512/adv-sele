@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced selectors</title>
+</head>
+
+<style>
+.one1[type="text"]{
+    border: 5px solid pink
+}
+.one2[type="text"]{
+    border:5px solid orangered;
+}
+
+ul > li{
+    color: blue;
+    font-size: larger;
+}
+
+h1 + p{
+    color: greenyellow;
+    font-size: xx-large;
+}
+a:hover{
+    color: lightcoral;
+    font-size: 50px;
+}
+a:active{
+    color: blueviolet;
+}
+a:visited{
+    color: darkolivegreen;
+}
+li:nth-child(2){
+    font-size: 30px;
+}
+div:not(parent1){
+    border: 2px dashed lightblue;
+}
+</style>
+<body>
+    <div class="parent1">asdfghj</div>
+    <div class="parent2">sdfghjk</div>
+<!--sibling selectors-->
+    <h1>Advanced selectors</h1>
+    <p>this is para 1</p>
+    <p>this is para 2</p>
+
+
+   <!--attribute selectors-->
+    <form action="#">
+
+<input class="one1"type="text" placeholder="Enter your name"><br><br>
+<input class="one2" type="text" placeholder="Enter your last name"><br>
+<!--child selector-->
+<ul>
+
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+</ul>
+
+<!--pseudo classes-->
+<a href="media 2.html">media file that i created in hw</a>
+
+    </form>
+</body>
+</html>
